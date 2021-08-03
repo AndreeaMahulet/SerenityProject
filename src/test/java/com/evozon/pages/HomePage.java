@@ -15,7 +15,6 @@ public class HomePage extends BasePage{
     public void clickMyAccount(){
         clickOn(myAccountLink);
     }
-
     public void clickLogInLink(){
         clickOn(logInLink);
     }
