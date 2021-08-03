@@ -4,6 +4,7 @@ import net.serenitybdd.core.annotations.findby.FindBy;
 import net.serenitybdd.core.pages.WebElementFacade;
 
 public class DashboardPage extends BasePage{
+    AddressBookPage addressBookPage;
     @FindBy(css = ".hello strong")
     private WebElementFacade welcomeMessage;
 

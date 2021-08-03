@@ -1,7 +1,6 @@
 package com.evozon.pages;
 
 import net.serenitybdd.core.pages.WebElementFacade;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
 
 public class AddressBookPage extends BasePage{
@@ -30,7 +29,13 @@ public class AddressBookPage extends BasePage{
     @FindBy(className = "success-msg")
     private WebElementFacade savedAddressMessage;
     @FindBy(css=".page-title h1")
-    private WebElementFacade adressBookMessage;
+    private WebElementFacade addressBookMessage;
+    @FindBy(xpath="//*[@id=\"top\"]/body/div/div[2]/div[2]/div/div[2]/div[2]/div[2]/div[1]/ol/li[1]/p/a")
+    private WebElementFacade changeBillingAddressButton;
+    @FindBy(css="#telephone")
+    private WebElementFacade telephoneFieldWithData;
+    @FindBy(xpath="//*[@id=\"top\"]/body/div/div[2]/div[2]/div/div[2]/div[2]/div[2]/div[1]/ol/li[1]/address/text()[2]")
+    private WebElementFacade streetAddress;
 
     public void clickOnAddNewAddressButton(){
         clickOn(addNewAddressButton);
@@ -66,10 +71,15 @@ public class AddressBookPage extends BasePage{
         return savedAddressMessage.containsOnlyText("The address has been saved.");
     }
     public boolean isAddressBookMessage(){
-        return adressBookMessage.containsOnlyText("ADDRESS BOOK");
+        return addressBookMessage.containsOnlyText("ADDRESS BOOK");
     }
     public void clickOnAddressBookLink(){
         clickOn(addressButton);
     }
-
+    public void clickOnBillingAddressEditLink(){
+        clickOn(changeBillingAddressButton);
+    }
+    public boolean isAddressBookSavedAsBillingAddress(){
+        return streetAddress.getText().equalsIgnoreCase(telephoneFieldWithData.getText());
+    }
 }

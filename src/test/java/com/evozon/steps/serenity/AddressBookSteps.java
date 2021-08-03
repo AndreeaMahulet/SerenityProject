@@ -2,6 +2,7 @@ package com.evozon.steps.serenity;
 
 import com.evozon.pages.AccountInformationPage;
 import com.evozon.pages.AddressBookPage;
+import com.evozon.pages.DashboardPage;
 import com.evozon.pages.HomePage;
 import com.evozon.util.Constants;
 import net.thucydides.core.annotations.Step;
@@ -14,9 +15,10 @@ public class AddressBookSteps {
     private LoginSteps loginSteps;
     private AccountInformationPage accountInformationPage;
     private AddressBookPage addressBookPage;
+    private DashboardPage dashboardPage;
+
     @Step
     public void navigateToLoginPage(){
-        homePage.open();
         homePage.clickMyAccount();
         homePage.clickLogInLink();
         loginSteps.loginWithCredentials(Constants.USER_EMAIL, Constants.USER_PASS);
@@ -42,5 +44,13 @@ public class AddressBookSteps {
     @Step
     public void verifySavedNewAddress(){
         Assert.assertTrue(addressBookPage.isSavedAddressMessage());
+    }
+    @Step
+    public void clickOnBillingAddressEdit(){
+        addressBookPage.clickOnBillingAddressEditLink();
+    }
+    @Step
+    public void verifySavedAddressInAddressBook(){
+        Assert.assertTrue(addressBookPage.isAddressBookSavedAsBillingAddress());
     }
 }

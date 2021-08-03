@@ -18,7 +18,6 @@ public class AccountInformationSteps{
     private DashboardPage dashboardPage;
     @Step
     public void navigateToLoginPage(){
-        homePage.open();
         homePage.clickMyAccount();
         homePage.clickLogInLink();
         loginSteps.loginWithCredentials(Constants.USER_EMAIL, Constants.USER_PASS);

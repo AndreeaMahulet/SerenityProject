@@ -160,7 +160,7 @@
             <a href="7ea0a5e2d679b9deeda9910ae4a9bcd3a281e0d908303a9e16e486103e98880c.html"><i class="fa fa-comments-o"></i> Capabilities</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 02-08-2021 15:47</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 03-08-2021 12:12</span>
     <br style="clear:left"/>
 </div>
 
@@ -195,9 +195,9 @@
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-exclamation-triangle error-icon fa-2x' title='ERROR'></i></a></span>
                             <span class="test-case-title">
-                                <span class="success-color">Go to edit account
+                                <span class="error-color">Go to edit account
                                     <span class="related-issue-title"></span>
                                 </span>
                             </span>
@@ -214,15 +214,49 @@
 
     <div id="beforetable"></div>
     <div id="contenttilttle">
+            <div class="screenshotFailure panel panel-danger">
+
+    <div style="display:block">
+        <div class="table">
+            <div class="row">
+                <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
+                    <span class="error-message error-message-title">Null pointer exception</span>
+                </div>
+                <div class="col-sm-2">
+                    <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-overall""
+                       role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="far fa-eye"></i> More details</a>
+                </div>
+             </div>
+        </div>
+    <div>
+
+    <!-- Details Section -->
+    <div class="row stacktrace-details">
+      <div class="col">
+        <div class="collapse multi-collapse" id="stacktraceModal-overall">
+            <div class="card">
+                <div class="card-header">
+                    <h4>java.lang.NullPointerException </h4>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <pre>com.evozon.pages.LoginPage.clickLoginButton(LoginPage.java:25)<br />com.evozon.steps.serenity.LoginSteps.loginWithCredentials(LoginSteps.java:24)<br />com.evozon.steps.serenity.AccountInformationSteps.navigateToLoginPage(AccountInformationSteps.java:23)<br />com.evozon.features.search.AccountInformationTest.goToEditAccount(AccountInformationTest.java:17)<br /></pre>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+                <div class="panel-body">
+                    <a href="#" target="_blank" class="btn btn-info">HTML Source</a>
+                </div>
+            </div>
         <div class="slider-wrapper theme-default">
             <div id="slider">
-                <img src="1d133657219077751545ce99d7cd60a6cbc5522f27fde7127838276c675a25d6.png" title=" Navigate to login page" width="1554"/>
-                <img src="1d133657219077751545ce99d7cd60a6cbc5522f27fde7127838276c675a25d6.png" title=" Login with credentials: conttest3@yahoo.com, parolatest" width="1554"/>
-                <img src="2e35e1946baa7ac397b7699e96888e7ab44db57e4633c0a9f38d32b44dcf2557.png" title=" Login with credentials: conttest3@yahoo.com, parolatest (completed)" width="1554"/>
-                <img src="792ccf1c0ebf3480f0980394cf82b09906fc2119feedd83409e30a35673f5a1d.png" title=" Navigate to login page (completed)" width="1554"/>
-                <img src="792ccf1c0ebf3480f0980394cf82b09906fc2119feedd83409e30a35673f5a1d.png" title=" Verify account information text" width="1554"/>
-                <img src="f395102935f94c87c551f385b1e7f62265efe990fc5205ab6523dfc902b67041.png" title=" Edit account information: Andreea, Mahu" width="1554"/>
-                <img src="f395102935f94c87c551f385b1e7f62265efe990fc5205ab6523dfc902b67041.png" title=" Verify edited account: Andreea Mahu: <span class='success-color'>SUCCESS</span>" width="1554"/>
+                <img src="7fae9bd4d28a119eb11aee8892b362d4a216059ff3e89aac64c37755a5fab395.png" title=" Navigate to login page" width="1920"/>
+                <img src="720e3d9376a19b1dd56b205752d2a96d081ffc6670f12ca31b87a57a92d08c1f.png" title=" Login with credentials: conttest3@yahoo.com, parolatest: <span class='error-color'>ERROR</span>" width="1920"/>
             </div>
         </div>
 

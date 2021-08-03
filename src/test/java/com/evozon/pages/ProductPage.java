@@ -5,7 +5,8 @@ import net.serenitybdd.core.pages.WebElementFacade;
 import org.openqa.selenium.By;
 
 public class ProductPage extends BasePage{
-
+    @FindBy(css="span.h1")
+    private WebElementFacade productName;
     @FindBy(css = ".add-to-cart-buttons button")
     private WebElementFacade addCartBtn;
 
@@ -19,5 +20,9 @@ public class ProductPage extends BasePage{
 
     public void clickOnAddToCart(){
         clickOn(addCartBtn);
+    }
+
+    public boolean isProductPageDisplayed(String value){
+        return productName.getText().equalsIgnoreCase(value);
     }
 }

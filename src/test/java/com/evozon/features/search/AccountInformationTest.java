@@ -19,9 +19,6 @@ public class AccountInformationTest extends BaseTest{
         accountInformationSteps.editAccountInformation("Andreea","Mahu");
         accountInformationSteps.verifyEditedAccount(Constants.NEW_USERNAME);
     }
-    @Test
-    public void addNewAddress(){
 
-    }
 
 }

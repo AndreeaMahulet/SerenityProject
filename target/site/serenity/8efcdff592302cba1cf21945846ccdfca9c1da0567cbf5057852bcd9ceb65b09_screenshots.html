@@ -160,7 +160,7 @@
             <a href="7ea0a5e2d679b9deeda9910ae4a9bcd3a281e0d908303a9e16e486103e98880c.html"><i class="fa fa-comments-o"></i> Capabilities</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 02-08-2021 17:03</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 03-08-2021 11:05</span>
     <br style="clear:left"/>
 </div>
 
@@ -195,9 +195,9 @@
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-exclamation-triangle error-icon fa-2x' title='ERROR'></i></a></span>
                             <span class="test-case-title">
-                                <span class="success-color">Add new address
+                                <span class="error-color">Add new address
                                     <span class="related-issue-title"></span>
                                 </span>
                             </span>
@@ -214,15 +214,56 @@
 
     <div id="beforetable"></div>
     <div id="contenttilttle">
+            <div class="screenshotFailure panel panel-danger">
+
+    <div style="display:block">
+        <div class="table">
+            <div class="row">
+                <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
+                    <span class="error-message error-message-title">No such element exception: Timed out after 2 seconds. Element not found</span>
+                </div>
+                <div class="col-sm-2">
+                    <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-overall""
+                       role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="far fa-eye"></i> More details</a>
+                </div>
+             </div>
+        </div>
+    <div>
+
+    <!-- Details Section -->
+    <div class="row stacktrace-details">
+      <div class="col">
+        <div class="collapse multi-collapse" id="stacktraceModal-overall">
+            <div class="card">
+                <div class="card-header">
+                    <h4>org.openqa.selenium.NoSuchElementException </h4>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <pre>com.evozon.pages.AddressBookPage.isAddressBookSavedAsBillingAddress(AddressBookPage.java:83)<br />com.evozon.steps.serenity.AddressBookSteps.verifySavedAddressInAddressBook(AddressBookSteps.java:54)<br />com.evozon.features.search.AddressBookTest.addNewAddress(AddressBookTest.java:18)<br /></pre>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+                <div class="panel-body">
+                    <a href="pagesource9913436144867837326.html.txt" target="_blank" class="btn btn-info">HTML Source</a>
+                </div>
+            </div>
         <div class="slider-wrapper theme-default">
             <div id="slider">
-                <img src="1d133657219077751545ce99d7cd60a6cbc5522f27fde7127838276c675a25d6.png" title=" Navigate to login page" width="1554"/>
-                <img src="1d133657219077751545ce99d7cd60a6cbc5522f27fde7127838276c675a25d6.png" title=" Login with credentials: conttest3@yahoo.com, parolatest" width="1554"/>
-                <img src="2e35e1946baa7ac397b7699e96888e7ab44db57e4633c0a9f38d32b44dcf2557.png" title=" Login with credentials: conttest3@yahoo.com, parolatest (completed)" width="1554"/>
-                <img src="da31657e2e6d654992d25b9fa1ac9a0198a8462898268239f839d7a117df060b.png" title=" Navigate to login page (completed)" width="1554"/>
-                <img src="da31657e2e6d654992d25b9fa1ac9a0198a8462898268239f839d7a117df060b.png" title=" Verify add new address text" width="1554"/>
-                <img src="8fff18fbd91d177cbdfb1fa595cfd5ea1c3f6118ff2b8b134c13c01129ee09bc.png" title=" Add new address" width="1554"/>
-                <img src="8fff18fbd91d177cbdfb1fa595cfd5ea1c3f6118ff2b8b134c13c01129ee09bc.png" title=" Verify saved new address: <span class='success-color'>SUCCESS</span>" width="1554"/>
+                <img src="0808ec43cc28893254304fd9099713b8cd870dab2294ae82798c650481260564.png" title=" Navigate to login page" width="1920"/>
+                <img src="469b81437da3809b4ba3c902201f14c49ff8a31d78f030e67fb2eacc5d39200e.png" title=" Login with credentials: conttest3@yahoo.com, parolatest" width="1920"/>
+                <img src="2870b9a4862dd908883b25062af0d329421f33d5516bac6073e413e57a856bdf.png" title=" Login with credentials: conttest3@yahoo.com, parolatest (completed)" width="1920"/>
+                <img src="099150f2573a801d94cc00311a5ebd28f2c5362987cf72c1fdc7fbfb6c691374.png" title=" Navigate to login page (completed)" width="1920"/>
+                <img src="099150f2573a801d94cc00311a5ebd28f2c5362987cf72c1fdc7fbfb6c691374.png" title=" Verify add new address text" width="1920"/>
+                <img src="585bd0c5050e605f9a18c4443206429392a10686099d9539399c42ba581c46e1.png" title=" Add new address" width="1920"/>
+                <img src="585bd0c5050e605f9a18c4443206429392a10686099d9539399c42ba581c46e1.png" title=" Verify saved new address" width="1920"/>
+                <img src="317c711cf849c50c9e90d32342e8c0c5aea97103729206a89fa080db0f81b4b0.png" title=" Click on billing address edit" width="1920"/>
+                <img src="65594e14e1f38e982318d20f8e73f856e3bef0beca613c33bfafe1ba47ca75f2.png" title=" Verify saved address in address book: <span class='error-color'>ERROR</span>" width="1920"/>
             </div>
         </div>
 
