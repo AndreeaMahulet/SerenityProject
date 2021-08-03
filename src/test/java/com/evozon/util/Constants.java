@@ -6,4 +6,7 @@ public class Constants {
     public static final String USER_NAME = "Cont Test2";
     public static final String NEW_USERNAME="Andreea Mahu";
 
+
+    public static final String productWasAddedMessage = " was added to your shopping cart.";
+
 }
