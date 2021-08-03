@@ -4,10 +4,24 @@ import net.serenitybdd.core.pages.WebElementFacade;
 import org.openqa.selenium.By;
 
 
+
 import java.util.List;
 
 public class CategoryPage extends BasePage{
 
+public String getCategoryTitle(){
+  return  getDriver().findElement(By.cssSelector(".category-title h1")).getText();
+}
+
+    public WebElementFacade getCategory(String category){
+        List<WebElementFacade> navigationBarElements = findAll("#nav .nav-primary > li");
+        for(WebElementFacade nav:navigationBarElements) {
+            if (nav.getText().equalsIgnoreCase(category)) {
+                return nav;
+            }
+        }
+        return null;
+    }
 
     public void navigateToCategory(String categoryTitle){
         List<WebElementFacade> navigationBarElements = findAll("#nav .nav-primary > li");
