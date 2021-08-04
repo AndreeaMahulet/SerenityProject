@@ -1,1 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="com.evozon.features.search.SearchByKeywordStory" skipped="0" tests="1" time="6.92" timestamp="2021-08-02 12:55:23"><testcase classname="com.evozon.features.search.SearchByKeywordStory" name="Searching by keyword apple should display the corresponding article"/></testsuite>
