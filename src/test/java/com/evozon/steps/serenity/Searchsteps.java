@@ -10,7 +10,7 @@ public class Searchsteps {
     private SearchPage searchPage;
     private String searchKeyword, searchResult;
     @Step
-    public void searchAndVerify(){
+    public void searchAndVerifyProduct(){
        searchProduct(searchKeyword);
        verifyProductExists(searchResult);
     }

@@ -5,7 +5,7 @@ import org.openqa.selenium.support.FindBy;
 
 public class AddressBookPage extends BasePage{
     @FindBy(css="li a[href*=\"/customer/address\"] ")
-    private WebElementFacade addressButton;
+    private WebElementFacade addressLink;
     @FindBy(css="button[title=\"Add New Address\"]")
     private WebElementFacade addNewAddressButton;
     @FindBy(css="input[name=\"telephone\"]")
@@ -74,7 +74,7 @@ public class AddressBookPage extends BasePage{
         return addressBookMessage.containsOnlyText("ADDRESS BOOK");
     }
     public void clickOnAddressBookLink(){
-        clickOn(addressButton);
+        clickOn(addressLink);
     }
     public void clickOnBillingAddressEditLink(){
         clickOn(changeBillingAddressButton);

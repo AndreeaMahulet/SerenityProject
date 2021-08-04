@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="1" failures="0" name="com.evozon.features.search.AccountInformationTest" skipped="0" tests="1" time="8.79" timestamp="2021-08-03 12:12:31"><testcase classname="com.evozon.features.search.AccountInformationTest" name="Go to edit account"><error type="java.lang.NullPointerException"/><system-err>null&#13;
-com.evozon.pages.LoginPage.clickLoginButton(LoginPage.java:25)&#13;
-com.evozon.steps.serenity.LoginSteps.loginWithCredentials(LoginSteps.java:24)&#13;
-com.evozon.steps.serenity.AccountInformationSteps.navigateToLoginPage(AccountInformationSteps.java:23)&#13;
-com.evozon.features.search.AccountInformationTest.goToEditAccount(AccountInformationTest.java:17)&#13;
-</system-err></testcase></testsuite>

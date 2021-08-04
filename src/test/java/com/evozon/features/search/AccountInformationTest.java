@@ -13,12 +13,13 @@ public class AccountInformationTest extends BaseTest{
     private AccountInformationSteps accountInformationSteps;
 
     @Test
-    public void goToEditAccount(){
+    public void editAccount(){
         accountInformationSteps.navigateToLoginPage();
         accountInformationSteps.verifyAccountInformationText();
         accountInformationSteps.editAccountInformation("Andreea","Mahu");
         accountInformationSteps.verifyEditedAccount(Constants.NEW_USERNAME);
     }
+
 
 
 }

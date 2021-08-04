@@ -13,6 +13,6 @@ public class LoginTest extends BaseTest{
     public void loginTestWithValidUsername(){
         loginSteps.navigateToLoginPage();
         loginSteps.loginWithCredentials(Constants.USER_EMAIL, Constants.USER_PASS);
-        loginSteps.verifyLoggedIn(Constants.USER_NAME);
+        loginSteps.verifyLoggedIn(Constants.NEW_USERNAME);
     }
 }

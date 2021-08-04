@@ -7,9 +7,9 @@ import java.util.List;
 
 public class NewProductsPage extends BasePage{
 
+    @FindBy(css=".widget-products ul .item a")
+    List<WebElementFacade> newProductsList;
     public void clickOnProduct(String productName){
-        List<WebElementFacade> newProductsList = findAll(".widget-products ul .item a ");
-        System.out.println(newProductsList);
         for(WebElementFacade products:newProductsList){
             if(products.getTextValue().equalsIgnoreCase(productName)){
                 System.out.println(products.getText());

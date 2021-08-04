@@ -13,7 +13,7 @@ import org.openqa.selenium.WebDriver;
 @RunWith(SerenityParameterizedRunner.class)
 @UseTestDataFrom(value = "src/test/resources/loginWithPositiveCases.csv")
 
-public class LoginDataDrivenTest {
+public class LoginDataDrivenTest extends BaseTest{
     @Managed(uniqueSession = true)
     private WebDriver webdriver;
     @Steps

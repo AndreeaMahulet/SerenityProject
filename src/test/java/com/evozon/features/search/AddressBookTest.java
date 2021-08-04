@@ -14,7 +14,7 @@ public class AddressBookTest extends BaseTest{
         addressBookSteps.verifyAddNewAddressText();
         addressBookSteps.addNewAddress();
         addressBookSteps.verifySavedNewAddress();
-        addressBookSteps.clickOnBillingAddressEdit();
-        addressBookSteps.verifySavedAddressInAddressBook();
+//        addressBookSteps.clickOnBillingAddressEdit();
+//        addressBookSteps.verifySavedAddressInAddressBook();
     }
 }

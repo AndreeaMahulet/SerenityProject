@@ -6,9 +6,9 @@ import org.openqa.selenium.support.FindBy;
 public class AccountInformationPage extends BasePage{
 
     @FindBy(css="a[href*='/account/edit']")
-    private WebElementFacade myAccountInformation;
+    private WebElementFacade accountInformationLink;
     @FindBy(className = "page-title")
-    private WebElementFacade editMessage;
+    private WebElementFacade pageTitle;
     @FindBy(css="#firstname")
     private WebElementFacade firstNameField;
     @FindBy(css="#lastname")
@@ -19,7 +19,7 @@ public class AccountInformationPage extends BasePage{
     private WebElementFacade submitButton;
 
     public void clickOnAccountInformationButton(){
-        clickOn(myAccountInformation);
+        clickOn(accountInformationLink);
     }
     public void setNewFirstNameField(String firstName){
         typeInto(firstNameField, firstName);
@@ -34,7 +34,7 @@ public class AccountInformationPage extends BasePage{
         clickOn(submitButton);
     }
     public boolean isEditAccountMessage(){
-        return editMessage.containsOnlyText("EDIT ACCOUNT INFORMATION");
+        return pageTitle.containsOnlyText("EDIT ACCOUNT INFORMATION");
     }
 
 }

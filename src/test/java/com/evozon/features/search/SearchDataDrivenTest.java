@@ -24,6 +24,6 @@ public class SearchDataDrivenTest extends BaseTest{
 //    private String searchResult,searchKeyword;
     @Test
     public void searchItem() throws IOException {
-        withTestDataFrom("src/test/resources/searchDataDriven.csv").run(searchsteps).searchAndVerify();
+        withTestDataFrom("src/test/resources/searchDataDriven.csv").run(searchsteps).searchAndVerifyProduct();
     }
 }
